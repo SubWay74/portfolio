@@ -1,0 +1,330 @@
+:root {
+    --main-color: #1B1A17;
+    --sec-color: #f3c5a1c7;
+    --thrd-color: #c96d1d;
+    --maintxt-color: #ededed;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--sec-color);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    max-height: 60px;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav .logo-img {
+    width: 70px;
+    opacity: 1;
+    margin-top: 30px;
+}
+
+nav .links {
+    color: var(--main-color);
+}
+
+nav .links li {
+    padding: 20px;
+}
+
+.active {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.landing {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/alexlib2.webp);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+section .none {
+    width: 50%;
+}
+
+section .about {
+    width: 50%;
+    background-color: #292021e8;
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 1;
+}
+
+section .about h3 {
+    color: var(--maintxt-color);
+    font-weight: 400;
+}
+
+section .about p {
+    padding-left: 20px;
+    margin-top: -5px;
+    color: var(--maintxt-color);
+    font-weight: 100;
+}
+
+@media (max-width: 600px) {
+    nav .name {
+        display: none;
+    }
+    section .none {
+        display: none;
+    }
+    section .about {
+        width: 100%;
+    }
+}
+
+.port {
+    width: 100%;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+.port h3 {
+    font-size: xx-large;
+    padding: 10px;
+    margin: 0;
+    color: var(--maintxt-color);
+}
+
+.tests {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.tests .bg {
+    background-color: var(--thrd-color);
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .tests .bg::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.527);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.bg .project{
+    z-index: 1;
+    display: flex;
+    color: var(--maintxt-color);
+    width: 100%;
+}
+
+hr {
+    width: 100%;
+    background-color: #c96d1dba;
+    height: 2vh;
+    margin: 0;
+    border: 0;
+}
+
+button {
+    margin-bottom: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--maintxt-color);
+    background-color: var(--main-color);
+    padding: 5px;
+}
+
+.none {
+    padding: 0 25px;
+    margin: 0;
+}
+
+.none h1 {
+    color: var(--maintxt-color);
+}
+/* TESTONE */
+
+.sub {
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+
+.sub p {
+    color: var(--maintxt-color);
+}
+
+.sub #error {
+    min-height: 20px;
+    color: rgb(99, 17, 17);
+}
+
+/* TESTONE */
+
+/* COUNT */
+
+.tests .nums {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.count {
+    flex-direction: column;
+}
+
+.count h2 {
+    margin: 10px;
+}
+
+.count .btns {
+    flex-direction: column;
+}
+
+/* TESTTWO */
+
+.blackjack {
+    margin-top: 0;
+    text-align: center;
+    flex-direction: column;
+    min-height: 332px;
+}
+
+#play-stats {
+    font-style: italic;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+}
+
+/* TEST THREE */
+
+.tabs {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+input {
+    border: none;
+    width: calc(100% - 50px);
+    margin: 5px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+}
+
+#delete-btn {
+    background-color: var(--maintxt-color);
+    color: var(--main-color);
+}
+
+.tabs ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.tabs ul li {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tabs ul li a {
+    color: var(--sec-color);
+}
+
+.project {
+    overflow: auto;
+}
+
+.tabs .tab-btns {
+    margin-left: 5px;
+}
+
+footer {
+    background-image: url(../img/xandos.webp);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    background-color: #1b1a17e0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer ul {
+    z-index: 1;
+}
+
+footer ul li {
+    margin: 10px;
+}
+
+footer .fot-links,
+footer .fot-about {
+    color: white;
+}
+footer .fot-links{
+    font-size: 50px;
+}

@@ -1,3 +1,38 @@
+let homeEl = document.getElementById("home");
+let projectEl = document.getElementById("projects");
+let aboutEl = document.getElementById("about");
+
+homeEl.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+        
+    });
+    this.classList.add("active");
+    projectEl.classList.remove("active");
+    aboutEl.classList.remove("active");
+})
+
+projectEl.addEventListener("click", function () {
+    window.scrollTo({
+        top: 729,
+        behavior: "smooth"
+    })
+    this.classList.add("active");
+    homeEl.classList.remove("active");
+    aboutEl.classList.remove("active");
+})
+
+aboutEl.addEventListener("click", function () {
+    window.scrollTo({
+        top: 1649,
+        behavior:"smooth"
+    });
+    this.classList.add("active");
+    homeEl.classList.remove("active");
+    projectEl.classList.remove("active");
+})
+
 // TESTONE
 
 let start = 0;
@@ -166,17 +201,13 @@ const deleteEl = document.getElementById("delete-btn");
 const tabBtn = document.getElementById("tab");
 
 let myLocation = location.href
-console.log(myLocation);
 
 const myLeadsFronLS = JSON.parse(localStorage.getItem("myLeads"));
-console.log(myLeadsFronLS);
 
 if (Boolean(myLeadsFronLS) === true) {
     myLeads = myLeadsFronLS;
     render(myLeads)
-} else {
-    console.log("mafee4")
-}
+} 
 
 saveTabEl.addEventListener("click", function () {
     if (inputEl.value === "") {

@@ -55,6 +55,7 @@ nav .links {
 
 nav .links li {
     padding: 20px;
+    cursor: pointer;
 }
 
 .active {

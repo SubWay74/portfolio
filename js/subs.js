@@ -8,9 +8,6 @@ homeEl.addEventListener("click", function () {
         behavior: "smooth"
         
     });
-    this.classList.add("active");
-    projectEl.classList.remove("active");
-    aboutEl.classList.remove("active");
 })
 
 projectEl.addEventListener("click", function () {
@@ -18,20 +15,34 @@ projectEl.addEventListener("click", function () {
         top: 729,
         behavior: "smooth"
     })
-    this.classList.add("active");
-    homeEl.classList.remove("active");
-    aboutEl.classList.remove("active");
 })
 
 aboutEl.addEventListener("click", function () {
     window.scrollTo({
-        top: 1649,
+        top: 2171,
         behavior:"smooth"
     });
-    this.classList.add("active");
-    homeEl.classList.remove("active");
-    projectEl.classList.remove("active");
 })
+
+window.onscroll = function () {
+    console.log(window.scrollY)
+    if (window.scrollY <= 700 ) {
+        homeEl.classList.add("active");
+        projectEl.classList.remove("active");
+        aboutEl.classList.remove("active");
+    } else if (window.scrollY >= 700 && window.scrollY <= 2169) {
+        projectEl.classList.add("active");
+        homeEl.classList.remove("active");
+        aboutEl.classList.remove("active");
+    } else if (window.scrollY >= 2170) {
+        aboutEl.classList.add("active");
+        homeEl.classList.remove("active");
+        projectEl.classList.remove("active");
+    }
+}
+
+
+
 
 // TESTONE
 

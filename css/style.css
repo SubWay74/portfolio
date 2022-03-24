@@ -46,7 +46,7 @@ nav .logo {
 nav .logo-img {
     width: 70px;
     opacity: 1;
-    margin-top: 30px;
+    border-radius: 50%;
 }
 
 nav .links {
@@ -76,7 +76,7 @@ nav .links li {
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.322);
 }
 
@@ -113,6 +113,11 @@ section .about p {
     }
     section .about {
         width: 100%;
+        text-align: center;
+        padding: 50px 0px;
+    }
+    .tests section {
+        width: 100%;
     }
 }
 
@@ -145,15 +150,11 @@ section .about p {
     justify-content: center;
 }
 
-/* .tests .bg::before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.527);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-} */
+@media (max-width: 600px) {
+    .tests .bg{
+        width: 80%;
+    }
+}
 
 .bg .project{
     z-index: 1;
@@ -165,7 +166,7 @@ section .about p {
 hr {
     width: 100%;
     background-color: #c96d1dba;
-    height: 2vh;
+    height: 1vh;
     margin: 0;
     border: 0;
 }
@@ -267,6 +268,11 @@ input {
     margin-bottom: 10px;
 }
 
+input:focus-visible {
+    outline: none;
+    border: 1px solid var(--main-color);
+}
+
 #delete-btn {
     background-color: var(--maintxt-color);
     color: var(--main-color);
@@ -283,7 +289,7 @@ input {
 }
 
 .tabs ul li a {
-    color: var(--sec-color);
+    color: var(--main-color);
 }
 
 .project {
@@ -293,6 +299,21 @@ input {
 .tabs .tab-btns {
     margin-left: 5px;
 }
+
+
+/* ACTIVITES */
+
+@media (max-width: 1000px) {
+    .actv section .none {
+        display: none;
+    }
+}
+
+.imeges {
+    max-width: 50%;
+}
+
+/* FOOTER */
 
 footer {
     background-image: url(../img/xandos.webp);

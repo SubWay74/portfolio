@@ -25,7 +25,6 @@ aboutEl.addEventListener("click", function () {
 })
 
 window.onscroll = function () {
-    console.log(window.scrollY)
     if (window.scrollY <= 700 ) {
         homeEl.classList.add("active");
         projectEl.classList.remove("active");

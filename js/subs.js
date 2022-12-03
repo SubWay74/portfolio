@@ -1,3 +1,4 @@
+// JS doesn't work yet I'm changing the whole site..
 let homeEl = document.getElementById("home");
 let projectEl = document.getElementById("projects");
 let aboutEl = document.getElementById("about");

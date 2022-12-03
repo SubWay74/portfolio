@@ -30,7 +30,6 @@ a {
 .center {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
 nav {
@@ -47,11 +46,6 @@ nav {
 nav .logo {
     animation: color-change 2s infinite;
     font-family: 'Pacifico', cursive;
-}
-
-nav .logo h1 {
-    /* background-image: url(/img/h1animation.png); */
-
 }
 
 @keyframes color-change {
@@ -120,7 +114,6 @@ section .none .img-logo {
 .filp-card {
     animation: flip-js 5s infinite;
     transform-style: preserve-3d;
-    /* transition: 1s transform; */
     width: 100%;
     position: absolute;
     height: 100%;
@@ -173,9 +166,8 @@ section .about p {
     margin: 0px 15px;
     color: var(--maintxt-color);
     font-weight: 100;
-    /* align-self: flex-start; */
-    /* background-color: var(--thrd-color); */
     position: relative;
+    text-align: center;
 }
 
 section .about p::before {

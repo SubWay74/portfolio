@@ -15,6 +15,7 @@ body {
     font-family: 'Fredoka', sans-serif;
     background-image: linear-gradient(21deg, #1B1A17, #000000d1);
     min-width: 600px;
+    overflow: hidden;
 }
 
 ul {
@@ -49,11 +50,7 @@ nav {
 nav .logo {
     animation: color-change 2s infinite;
     font-family: 'Pacifico', cursive;
-}
-
-nav .logo h1 {
-    /* background-image: url(/img/h1animation.png); */
-
+    padding: 20px;
 }
 
 @keyframes color-change {
@@ -195,30 +192,6 @@ section .about p::before {
     transform: skewX(-15deg);
 }
 
-@media (max-width: 800px) {
-    section .none {
-        /* display: none; */
-        opacity: 0;
-        width: 0px;
-    }
-    section .about {
-        width: 100%;
-        text-align: center;
-        padding: 50px 0px;
-    }
-    .tests section {
-        width: 100%;
-    }
-}
-
-
-
-@media (max-width: 600px) {
-    .tests .bg{
-        width: 80%;
-    }
-}
-
 hr {
     width: 100%;
     background-color: #c96d1dba;
@@ -280,7 +253,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    top: 88%;
+    bottom: 0%;
     min-width: 600px;
 }
 
@@ -311,3 +284,24 @@ footer .fot-links{
 }
 
 
+@media (max-width: 700px) {
+    .links {
+        display: none;
+    }
+    section .none {
+        /* display: none; */
+        opacity: 0;
+        width: 0px;
+    }
+    section .about {
+        width: 100%;
+        text-align: center;
+        padding: 50px 0px;
+    }
+    .tests section {
+        width: 100%;
+    }
+    .tests .bg{
+        width: 80%;
+    }
+}

@@ -121,7 +121,6 @@ projectBtn.addEventListener("click", function () {
 })
 
 window.onscroll = function () {
-    console.log(scrollY)
     if (window.scrollY <= 350 ) {
         homeBtn.classList.add("active");
         projectBtn.classList.remove("active");

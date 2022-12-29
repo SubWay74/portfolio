@@ -40,7 +40,6 @@ nav {
     width: 100%;
     z-index: 5;
     max-height: 60px;
-    min-width: 600px;
 }
 
 nav .logo {

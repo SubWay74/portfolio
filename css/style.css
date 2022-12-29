@@ -391,6 +391,13 @@ footer .fot-links{
         text-align: center;
         padding: 50px 0px;
     }
+
+    section .right-side h3,
+    section .right-side p {
+        font-size: 25px;
+    }
+
+
     .tests section {
         width: 100%;
     }

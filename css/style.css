@@ -397,6 +397,9 @@ footer .fot-links{
         font-size: 25px;
     }
 
+    .skills #my-skills {
+        justify-content: center;
+    }
 
     .tests section {
         width: 100%;

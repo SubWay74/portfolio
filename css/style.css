@@ -348,7 +348,6 @@ footer {
     justify-content: space-around;
     align-items: center;
     bottom: 0%;
-    min-width: 600px;
 }
 
 footer::after {
